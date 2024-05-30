@@ -1,0 +1,24 @@
+﻿<Window x:Class="EquipmentRepair.View.MainForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EquipmentRepair.View"
+        mc:Ignorable="d"
+        Title="MainForm" Height="450" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Content="Главная" FontSize="32" FontWeight="DemiBold"/>
+        <Button x:Name="checkRequests" Content="🆕Просмотр новых заявок" Margin="45,20" Grid.Row="1" FontSize="15" Click="checkRequests_Click"/>
+        <Button x:Name="listRequests" Content="📁Реестр заявок" Margin="45,20" Grid.Row="2" FontSize="15" Click="listRequests_Click"/>
+        <Button x:Name="newRequest" Content="➕Создать новую заявку" Margin="45,20" Grid.Row="3" FontSize="15" Click="newRequest_Click"/>
+        <Button x:Name="userManage" Content="🙍‍Управление пользователями" Margin="45,20" Grid.Row="4" FontSize="15" Click="userManage_Click"/>
+
+    </Grid>
+</Window>
